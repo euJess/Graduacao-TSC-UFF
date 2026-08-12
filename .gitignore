@@ -4,18 +4,11 @@
 *.doc
 *.txt
 *.gsheet
-*.gitattributes
+*.gdoc
 
 # Ignorar pastas específicas inteiras (ex: pasta de relatórios ou livros)
 Documents/
 livros/
-/sem1/CPW/AP1
-/sem1/CPW/AP2
-/sem1/IAI/AP1
-/sem1/IAI/AP2
-/sem1/II/
-/sem1/PDA/AP1
-/sem1/PDA/AP2
 
 # Ignorar arquivos temporários do sistema ou da sua IDE
 .DS_Store
