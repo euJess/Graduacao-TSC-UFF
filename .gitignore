@@ -9,6 +9,7 @@
 # Ignorar pastas específicas inteiras (ex: pasta de relatórios ou livros)
 Documents/
 livros/
+sem1/CPW/AD1/help
 
 # Ignorar arquivos temporários do sistema ou da sua IDE
 .DS_Store
