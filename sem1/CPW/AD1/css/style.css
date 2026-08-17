@@ -1,0 +1,64 @@
+
+/*adicionar cometários por boas práticas*/
+body{
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 20px 8%;
+  background-color: #E6F0B5;
+  color: #E53646;
+  font-size: 16px;
+  font-family: "Stoke", serif, Lucida Bright, liberation;
+}
+
+header{
+  display: block;
+  margin-bottom: 1px;
+  overflow: auto;
+}
+
+nav{
+  display: block; 
+  width: 20%; 
+  float: left;
+  color: #E53646;
+  line-height: 230%;
+  margin-top: 40px;
+  
+}
+
+section { 
+  display: block; 
+  width: 70%; 
+  float: right; 
+}
+
+a:link{
+  color: #D53646;
+}
+a:visited{ 
+  color: #D53636;
+}
+
+ol, ul{
+  line-height: 200%;
+  list-style-type: square;
+}
+
+.ender{
+  float: right;
+  line-height: 140%;
+  font-size:14px;
+  font-family: "Karla", sans-serif, verdana, ubuntu;
+}
+
+.imgLogo{
+  border: solid, 0 4px, #E53646;
+  margin-bottom: 6px;
+  padding-bottom: 5px;
+}
+
+.apres{
+  display: center;
+  font-size: 16px;
+}
