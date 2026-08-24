@@ -9,6 +9,7 @@ body{
   color: #E53646;
   font-size: 16px;
   font-family: "Stoke", serif, Lucida Bright, liberation;
+  box-sizing: border-box;
 }
 
 header{
@@ -21,10 +22,14 @@ nav{
   display: block; 
   width: 20%; 
   float: left;
+   
+}
+
+/*pega só a lista da nav*/
+nav ul{
   color: #E53646;
   line-height: 230%;
   margin-top: 40px;
-  
 }
 
 section { 
@@ -33,9 +38,12 @@ section {
   float: right; 
 }
 
-a:link{
+a{
   color: #D53646;
+  text-decoration: none;
 }
+
+/*cor do limk visitado*/
 a:visited{ 
   color: #D53636;
 }
@@ -45,20 +53,29 @@ ol, ul{
   list-style-type: square;
 }
 
+/*linha de endereço*/
 .ender{
   float: right;
+  text-align: right;
   line-height: 140%;
-  font-size:14px;
-  font-family: "Karla", sans-serif, verdana, ubuntu;
+  font-size: 14px;
+  font-family: "Karla", verdana, ubuntu, sans-serif;
+  font-style: italic;
 }
 
+/*logotipo*/
 .imgLogo{
-  border: solid, 0 4px, #E53646;
+  border-bottom: 4px solid #E53646;
   margin-bottom: 6px;
   padding-bottom: 5px;
+  width: 420px;
+  max-width: 65%;
+  height: auto;
 }
 
+/*conteudo princial*/
 .apres{
   display: center;
   font-size: 16px;
+  margin-top: 40px;
 }
