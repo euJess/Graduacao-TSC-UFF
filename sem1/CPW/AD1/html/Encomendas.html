@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Stoke:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Encomendas</title>
+  </head>
+  <body>
+    <header>
+      <adress class="ender"> 
+        Tv. La Donna e Mobile, 134<br>
+        Tel: (21) 91224-4881<br>
+        <a href="mailto:contato@doremisolfa.com.br">contato@doremisolfa.com.br</a>
+      </adress>
+      <img class="imgLogo" src="../img/DoremisofaLogoTopo.png" alt="DOReMI SOlfá Móveis">
+    </header>
+    <nav>
+      <ul>
+          <br><li><a href="DoremisolfaMoveis.html" target="_blank"><b>Apresentação</b></a></li>
+          <br><li><a href="Doremi.html" target="_blank"><b>Camas</b></a></li>
+          <br><li><a href="Solfa.html" target="_blank"><b>Sofas</b></a></li>
+          <br><li><a href="Encomendas.html" target="_blank"><b>Encomendas</b></a></li>
+          </ul>
+    </nav>
+    <section>
+
+      <h2 class="titulo">Encomendas</h2>
+
+      <!--Formulário-->
+      <div class="FormBox">
+        <form method="post" action="#">
+          <br>
+          <!--Primeiro campo-->
+          <fieldset class="FSLinhaInteira">
+          
+            <legend>identificação</legend>
+
+            <div class="LinhaForm">
+
+              <!--campo do email-->
+              <div class="ColEsq" id="loginCad">
+                <label class="LabBox" for="idEmail">Email:</label>
+                <input class="InpBoxGnd" id="idEmail" name="email" type="email">
+              </div>
+
+              <!--campo da senha-->
+              <div class="ColDir" id="senhaCad">
+                <label class="LabBox" for="senha">Senha:</label>
+                <input class="InpBoxMed" id="senha" name="Senha" type="password">
+              </div>
+
+            </div>
+
+            <p>Se você ainda não tem cadastro clique <a href="cadastro.html" target="blank">aqui</a>!</p>
+
+          </fieldset>
+
+          <!--Segundo campo-->
+          <fieldset class="FSLinhaInteira">
+            <legend>Lista de Compras</legend>
+
+            <div class="LinhaForm">
+
+              <!--Lista dos Produtos-->
+              <div class="ColEsq" id="lisSelProd">
+                <label for="selProduto">Produtos</label>
+                <select id="selProduto" name="produto">
+
+                  <!--selected = opção inicial selecionada-->
+                  <option selected>-----</option>
+  
+                  <optgroup label="Cama Solteiro">
+                    <option>Simples 104 x 104 x 202</option>
+                    <option>Bicama 70 x 87 x 193</option>
+                  </optgroup>
+  
+                  <optgroup label="Cama Casal">
+                    <option>Simples 108 x 154 x 210</option>
+                    <option>Com gavetas 48 x 145 x 195</option>
+                  </optgroup>
+  
+                  <optgroup label="Sofá 2 lug.">
+                    <option>Retrátil 95 x 87-126 x 180 Linho Cru</option>
+                    <option>Sofá-cama 95 x 97-150 x 150 Linho</option>
+                  </optgroup>
+  
+                  <optgroup label="Sofá 3 lug.">
+                    <option>Retrátil 108 x 95-155 x 200 Suede</option>
+                    <option>Retrô 80 x 76 x 196  Veludo</option>
+                  </optgroup>
+
+                </select>
+              </div>
+
+              <!--botão incuir-->
+              <input class="ColDir" id="btnIncluir" name="incluir" type="button" value="Incluir">
+            </div>
+
+            <!--Lista de pedidos-->
+            <div class="LinhaForm" id="boxPedidos">
+              <textarea id="lisPedArea" name="pedidos" readonly></textarea>
+            </div><br>
+
+            <!--campo do valor-->
+            <div class="ColDir">
+              <label for="valor">Valor: R$</label>
+              <input class="InpBoxMed" name="valor" type="text" readonly>
+            </div>
+
+          </fieldset>
+
+          <!--Terceiro campo-->
+          <fieldset class="FSLinhaInteira">
+
+            <legend>Dados do Cartão</legend>
+
+            <div class="FSColEsq">
+
+              <!--Numero-->
+              <div class="ColEsq" id="numCartao">
+                <label>Número: </label>
+                <input class="numQD" name="cartao1" type="text" maxlength="4">
+                <input class="numQD" name="cartao2" type="text" maxlength="4">
+                <input class="numQD" name="cartao3" type="text" maxlength="4">
+                <input class="numQD" name="cartao4" type="text" maxlength="4">
+              </div>
+  
+              <!--Validade-->
+              <div class="ColEsq" id="valCartao">
+                <label>Validade: </label>
+                <input class="numDD" name="mes" type="number" min="1" max="12" value="8"> /
+    
+                <input class="numQD" name="ano" type="number" min="2026" max="2050" value="2026">
+              </div>
+  
+              <!--Parcelas-->
+              <div class="ColEsq" id="boxParcel">
+                <label>Parcelas: </label>
+                <input class="numDD" name="parcelas" type="number" min="1" max="12" value="1"> x Sem Juros
+              </div>
+            </div>
+
+            <!--campo da bandeira à direita-->
+            <fieldset class="FSColDir" id="fsBandeira">
+
+              <legend>Bandeira</legend>
+              
+              <label><input type="radio" name="bandeira" value="visa" checked>Visa</label>
+  
+              <label><input type="radio" name="bandeira" value="master">Master</label>
+  
+              <label><input type="radio" name="bandeira" value="elo">Elo</label>
+            </fieldset>
+          </fieldset>
+          
+          <!--Botões finais-->
+          <div class="botoes">
+            <input type="submit" value="Confirmar">
+            <input type="reset" value="Limpar">
+          </div>
+
+        </form>
+
+      </div>
+      
+    </section>
+  </body>
+</html>
